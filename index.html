@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Filmes do Robson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;1,9..144,560&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="pagina">
+    <header>
+      <p class="olho">Diário de cinema</p>
+      <h1>Filmes do Robson</h1>
+      <p class="resumo">Notas de 0 a 10 e a opinião, do jeito que foi escrita.</p>
+      <dl class="stats">
+        <div>
+          <dt>Filmes</dt>
+          <dd id="n-filmes">—</dd>
+        </div>
+        <div>
+          <dt>Média</dt>
+          <dd><span id="media">—</span><small>/10</small></dd>
+        </div>
+      </dl>
+      <p class="regra">Empate na nota: fica na frente quem foi assistido antes.</p>
+    </header>
+
+    <nav class="abas" role="tablist" aria-label="Seções do diário" id="abas">
+      <button type="button" role="tab" id="tab-geral" data-view="geral" aria-selected="true" aria-controls="conteudo">Geral</button>
+      <button type="button" role="tab" id="tab-mes" data-view="mes" aria-selected="false" tabindex="-1" aria-controls="conteudo">Por mês</button>
+      <button type="button" role="tab" id="tab-genero" data-view="genero" aria-selected="false" tabindex="-1" aria-controls="conteudo">Por gênero</button>
+      <button type="button" role="tab" id="tab-marvel" data-view="marvel" aria-selected="false" tabindex="-1" aria-controls="conteudo">Marvel</button>
+      <button type="button" role="tab" id="tab-diario" data-view="diario" aria-selected="false" tabindex="-1" aria-controls="conteudo">Diário</button>
+    </nav>
+
+    <main id="conteudo" role="tabpanel" tabindex="0" aria-labelledby="tab-geral"></main>
+
+    <footer class="rodape">
+      Manda a data, a nota e a opinião que o próximo filme entra aqui.
+    </footer>
+  </div>
+
+  <noscript>
+    <p class="pagina">Este diário precisa de JavaScript só para montar a lista. Os dados estão em films.js.</p>
+  </noscript>
+
+  <script src="films.js"></script>
+  <script>
+    (function () {
+      var MESES = [
+        "janeiro", "fevereiro", "março", "abril", "maio", "junho",
+        "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
+      ];
+
+      var main = document.getElementById("conteudo");
+      var abas = document.getElementById("abas");
+
+      function fmtNota(n) {
+        var decimal = Math.round(n * 10) % 10 !== 0;
+        return n.toLocaleString("pt-BR", {
+          minimumFractionDigits: decimal ? 1 : 0,
+          maximumFractionDigits: 1
+        });
+      }
+
+      function fmtMedia(n) {
+        return n.toLocaleString("pt-BR", {
+          minimumFractionDigits: 1,
+          maximumFractionDigits: 1
+        });
+      }
+
+      function fmtData(iso) {
+        var p = String(iso).split("-");
+        if (p.length !== 3) return String(iso);
+        return p[2] + "/" + p[1] + "/" + p[0];
+      }
+
+      function rotuloMes(ym) {
+        var p = ym.split("-");
+        var idx = Number(p[1]) - 1;
+        var nome = MESES[idx] || p[1];
+        return nome + " " + p[0];
+      }
+
+      function nFilmes(n) {
+        return n === 1 ? "1 filme" : n + " filmes";
+      }
+
+      function media(lista) {
+        if (!lista.length) return 0;
+        var s = 0;
+        for (var i = 0; i < lista.length; i++) s += Number(lista[i].nota);
+        return s / lista.length;
+      }
+
+      function porNota(a, b) {
+        var d = Number(b.nota) - Number(a.nota);
+        if (d) return d;
+        if (a.data !== b.data) return a.data < b.data ? -1 : 1;
+        return String(a.titulo).localeCompare(String(b.titulo), "pt");
+      }
+
+      function porData(a, b) {
+        if (a.data !== b.data) return a.data < b.data ? -1 : 1;
+        return String(a.titulo).localeCompare(String(b.titulo), "pt");
+      }
+
+      function ordenar(lista, fn) {
+        return lista.slice().sort(fn);
+      }
+
+      function filmeEl(f, opts) {
+        var art = document.createElement("article");
+        art.className = "filme" + (opts.diario ? " diario" : "");
+
+        if (opts.diario) {
+          var quando = document.createElement("time");
+          quando.className = "quando";
+          quando.dateTime = f.data;
+          var dia = document.createElement("span");
+          dia.className = "dia";
+          dia.textContent = fmtData(f.data).slice(0, 5);
+          var anoVisto = document.createElement("span");
+          anoVisto.className = "ano-data";
+          anoVisto.textContent = String(f.data).slice(0, 4);
+          quando.appendChild(dia);
+          quando.appendChild(anoVisto);
+          art.appendChild(quando);
+        } else {
+          var pos = document.createElement("span");
+          pos.className = "pos";
+          pos.textContent = String(opts.pos);
+          art.appendChild(pos);
+        }
+
+        var corpo = document.createElement("div");
+        corpo.className = "corpo";
+
+        var h3 = document.createElement("h3");
+        h3.appendChild(document.createTextNode(f.titulo));
+        var ano = document.createElement("span");
+        ano.className = "ano";
+        ano.textContent = String(f.ano);
+        h3.appendChild(document.createTextNode(" "));
+        h3.appendChild(ano);
+
+        var sub = document.createElement("p");
+        sub.className = "sub";
+        var chip = document.createElement("span");
+        chip.className = "chip";
+        chip.setAttribute("data-g", f.genero);
+        chip.textContent = f.genero;
+        sub.appendChild(chip);
+        if (!opts.diario) {
+          var tempo = document.createElement("time");
+          tempo.dateTime = f.data;
+          tempo.textContent = fmtData(f.data);
+          sub.appendChild(tempo);
+        }
+
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "toggle";
+        btn.textContent = "Opinião";
+        var opiniao = document.createElement("p");
+        opiniao.className = "opiniao";
+        opiniao.hidden = true;
+        opiniao.id = opts.uid;
+        opiniao.textContent = f.opiniao || "";
+        btn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-controls", opts.uid);
+        btn.addEventListener("click", function () {
+          var aberto = btn.getAttribute("aria-expanded") === "true";
+          btn.setAttribute("aria-expanded", aberto ? "false" : "true");
+          opiniao.hidden = aberto;
+          btn.textContent = aberto ? "Opinião" : "Fechar opinião";
+        });
+
+        corpo.appendChild(h3);
+        corpo.appendChild(sub);
+        corpo.appendChild(btn);
+        corpo.appendChild(opiniao);
+
+        var nota = document.createElement("p");
+        nota.className = "nota" + (Number(f.nota) >= 9 ? " alta" : "");
+        var forte = document.createElement("strong");
+        forte.textContent = fmtNota(Number(f.nota));
+        var pequena = document.createElement("small");
+        pequena.textContent = "/10";
+        nota.appendChild(forte);
+        nota.appendChild(pequena);
+
+        art.appendChild(corpo);
+        art.appendChild(nota);
+        return art;
+      }
+
+      function listaEl(lista, opts) {
+        var frag = document.createDocumentFragment();
+        for (var i = 0; i < lista.length; i++) {
+          frag.appendChild(filmeEl(lista[i], {
+            diario: !!opts.diario,
+            pos: i + 1,
+            uid: opts.prefixo + "-" + i
+          }));
+        }
+        return frag;
+      }
+
+      function secaoEl(titulo, lista, prefixo) {
+        var sec = document.createElement("section");
+        sec.className = "secao";
+        var h2 = document.createElement("h2");
+        h2.textContent = titulo;
+        var lead = document.createElement("p");
+        lead.className = "lead";
+        if (!lista.length) {
+          lead.textContent = "Nenhum filme nesta lista.";
+          sec.appendChild(h2);
+          sec.appendChild(lead);
+          return sec;
+        }
+        var melhor = lista[0];
+        lead.textContent =
+          nFilmes(lista.length) +
+          " · média " + fmtMedia(media(lista)) +
+          " · melhor: " + melhor.titulo + " (" + fmtNota(Number(melhor.nota)) + ")";
+        sec.appendChild(h2);
+        sec.appendChild(lead);
+        sec.appendChild(listaEl(lista, { prefixo: prefixo }));
+        return sec;
+      }
+
+      function introEl(texto) {
+        var p = document.createElement("p");
+        p.className = "intro";
+        p.textContent = texto;
+        return p;
+      }
+
+      function agrupar(chaveFn) {
+        var mapa = new Map();
+        var ordem = [];
+        for (var i = 0; i < FILMES.length; i++) {
+          var f = FILMES[i];
+          var k = chaveFn(f);
+          if (!mapa.has(k)) {
+            mapa.set(k, []);
+            ordem.push(k);
+          }
+          mapa.get(k).push(f);
+        }
+        return { mapa: mapa, ordem: ordem };
+      }
+
+      function render(view) {
+        var tabs = abas.querySelectorAll('[role="tab"]');
+        for (var t = 0; t < tabs.length; t++) {
+          var on = tabs[t].getAttribute("data-view") === view;
+          tabs[t].setAttribute("aria-selected", on ? "true" : "false");
+          tabs[t].tabIndex = on ? 0 : -1;
+          if (on) main.setAttribute("aria-labelledby", tabs[t].id);
+        }
+
+        main.replaceChildren();
+
+        if (typeof FILMES === "undefined" || !Array.isArray(FILMES)) {
+          var erro = document.createElement("p");
+          erro.className = "vazio";
+          erro.textContent = "Não encontrei a lista em films.js.";
+          main.appendChild(erro);
+          return;
+        }
+
+        if (view === "geral") {
+          var geral = ordenar(FILMES, porNota);
+          main.appendChild(introEl("Da maior nota para a menor."));
+          main.appendChild(listaEl(geral, { prefixo: "geral" }));
+        } else if (view === "mes") {
+          var meses = agrupar(function (f) { return String(f.data).slice(0, 7); });
+          meses.ordem.sort();
+          if (!meses.ordem.length) main.appendChild(introEl("Nenhum filme ainda."));
+          for (var m = 0; m < meses.ordem.length; m++) {
+            var chave = meses.ordem[m];
+            main.appendChild(secaoEl(
+              rotuloMes(chave),
+              ordenar(meses.mapa.get(chave), porNota),
+              "mes-" + chave
+            ));
+          }
+        } else if (view === "genero") {
+          var gens = agrupar(function (f) { return f.genero || "Sem gênero"; });
+          gens.ordem.sort(function (a, b) { return a.localeCompare(b, "pt"); });
+          if (!gens.ordem.length) main.appendChild(introEl("Nenhum filme ainda."));
+          for (var g = 0; g < gens.ordem.length; g++) {
+            var nome = gens.ordem[g];
+            main.appendChild(secaoEl(
+              nome,
+              ordenar(gens.mapa.get(nome), porNota),
+              "gen-" + g
+            ));
+          }
+        } else if (view === "marvel") {
+          var marvel = ordenar(FILMES.filter(function (f) {
+            return f.genero === "Marvel";
+          }), porNota);
+          main.appendChild(secaoEl("Marvel", marvel, "marvel"));
+        } else {
+          var diario = ordenar(FILMES, porData);
+          main.appendChild(introEl("Da primeira sessão à mais recente."));
+          main.appendChild(listaEl(diario, { diario: true, prefixo: "diario" }));
+        }
+      }
+
+      function preencherCabecalho() {
+        if (typeof FILMES === "undefined" || !Array.isArray(FILMES) || !FILMES.length) {
+          document.getElementById("n-filmes").textContent = "0";
+          document.getElementById("media").textContent = "—";
+          return;
+        }
+        document.getElementById("n-filmes").textContent = String(FILMES.length);
+        document.getElementById("media").textContent = fmtMedia(media(FILMES));
+      }
+
+      abas.addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-view]");
+        if (!btn) return;
+        render(btn.getAttribute("data-view"));
+      });
+
+      abas.addEventListener("keydown", function (e) {
+        if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        var tabs = Array.prototype.slice.call(abas.querySelectorAll('[role="tab"]'));
+        var i = tabs.indexOf(document.activeElement);
+        if (i < 0) return;
+        e.preventDefault();
+        var dir = e.key === "ArrowRight" ? 1 : -1;
+        var next = tabs[(i + dir + tabs.length) % tabs.length];
+        next.focus();
+        render(next.getAttribute("data-view"));
+      });
+
+      preencherCabecalho();
+      render("geral");
+    })();
+  </script>
+</body>
+</html>
