@@ -50,7 +50,7 @@ const FILMES = [
   {
     "titulo": "Toy Story 2",
     "ano": 1999,
-    "ordem": 9,
+    "ordem": 10,
     "nota": 10,
     "data": "2026-07-27",
     "genero": "Animação",
@@ -95,7 +95,7 @@ const FILMES = [
   {
     "titulo": "Capitão América: O Primeiro Vingador",
     "ano": 2011,
-    "ordem": 2,
+    "ordem": 3,
     "nota": 8,
     "data": "2026-07-31",
     "genero": "Marvel",
@@ -112,6 +112,7 @@ const FILMES = [
   {
     "titulo": "Valente",
     "ano": 2012,
+    "ordem": 1,
     "nota": 8,
     "data": "2026-08-01",
     "genero": "Animação",
@@ -138,7 +139,7 @@ const FILMES = [
   {
     "titulo": "Thor",
     "ano": 2011,
-    "ordem": 3,
+    "ordem": 4,
     "nota": 8,
     "data": "2026-08-16",
     "genero": "Marvel",
@@ -173,7 +174,7 @@ const FILMES = [
   {
     "titulo": "Capitão América: O Soldado Invernal",
     "ano": 2014,
-    "ordem": 7,
+    "ordem": 8,
     "nota": 10,
     "data": "2026-08-24",
     "genero": "Marvel",
@@ -182,6 +183,7 @@ const FILMES = [
   {
     "titulo": "Guardiões da Galáxia",
     "ano": 2014,
+    "ordem": 7,
     "nota": 10,
     "data": "2026-08-28",
     "genero": "Marvel",
@@ -217,7 +219,7 @@ const FILMES = [
   {
     "titulo": "Capitão América: Guerra Civil",
     "ano": 2016,
-    "ordem": 10,
+    "ordem": 11,
     "nota": 10,
     "data": "2026-09-04",
     "genero": "Marvel",
@@ -226,7 +228,7 @@ const FILMES = [
   {
     "titulo": "Pantera Negra",
     "ano": 2018,
-    "ordem": 8,
+    "ordem": 9,
     "nota": 10,
     "data": "2026-09-05",
     "genero": "Marvel",
@@ -235,7 +237,7 @@ const FILMES = [
   {
     "titulo": "Homem-Aranha: De Volta ao Lar",
     "ano": 2017,
-    "ordem": 1,
+    "ordem": 2,
     "nota": 8,
     "data": "2026-09-05",
     "genero": "Marvel",
