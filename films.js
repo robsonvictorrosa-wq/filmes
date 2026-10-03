@@ -14,6 +14,7 @@ const FILMES = [
   {
     "titulo": "Carros",
     "ano": 2006,
+    "ordem": 6,
     "nota": 10,
     "data": "2026-07-17",
     "genero": "Animação",
@@ -22,6 +23,7 @@ const FILMES = [
   {
     "titulo": "Carros 2",
     "ano": 2011,
+    "ordem": 1,
     "nota": 7.5,
     "data": "2026-07-19",
     "genero": "Animação",
@@ -30,6 +32,7 @@ const FILMES = [
   {
     "titulo": "Gato de Botas",
     "ano": 2011,
+    "ordem": 2,
     "nota": 5,
     "data": "2026-07-25",
     "genero": "Animação",
@@ -38,6 +41,7 @@ const FILMES = [
   {
     "titulo": "Toy Story",
     "ano": 1995,
+    "ordem": 1,
     "nota": 9,
     "data": "2026-07-25",
     "genero": "Animação",
@@ -46,6 +50,7 @@ const FILMES = [
   {
     "titulo": "Toy Story 2",
     "ano": 1999,
+    "ordem": 9,
     "nota": 10,
     "data": "2026-07-27",
     "genero": "Animação",
@@ -54,6 +59,7 @@ const FILMES = [
   {
     "titulo": "Carros 3",
     "ano": 2017,
+    "ordem": 1,
     "nota": 6.5,
     "data": "2026-07-26",
     "genero": "Animação",
@@ -62,6 +68,7 @@ const FILMES = [
   {
     "titulo": "Toy Story 3",
     "ano": 2010,
+    "ordem": 3,
     "nota": 10,
     "data": "2026-09-28",
     "genero": "Animação",
@@ -70,6 +77,7 @@ const FILMES = [
   {
     "titulo": "Toy Story 4",
     "ano": 2019,
+    "ordem": 1,
     "nota": 5,
     "data": "2026-07-29",
     "genero": "Animação",
@@ -78,6 +86,7 @@ const FILMES = [
   {
     "titulo": "Homem-Aranha: Um Novo Dia",
     "ano": 2026,
+    "ordem": 1,
     "nota": 10,
     "data": "2026-07-30",
     "genero": "Marvel",
@@ -86,6 +95,7 @@ const FILMES = [
   {
     "titulo": "Capitão América: O Primeiro Vingador",
     "ano": 2011,
+    "ordem": 2,
     "nota": 8,
     "data": "2026-07-31",
     "genero": "Marvel",
@@ -110,6 +120,7 @@ const FILMES = [
   {
     "titulo": "Homem de Ferro 2",
     "ano": 2010,
+    "ordem": 3,
     "nota": 9,
     "data": "2026-08-04",
     "genero": "Marvel",
@@ -118,6 +129,7 @@ const FILMES = [
   {
     "titulo": "O Incrível Hulk",
     "ano": 2008,
+    "ordem": 3,
     "nota": 5,
     "data": "2026-08-15",
     "genero": "Marvel",
@@ -126,6 +138,7 @@ const FILMES = [
   {
     "titulo": "Thor",
     "ano": 2011,
+    "ordem": 3,
     "nota": 8,
     "data": "2026-08-16",
     "genero": "Marvel",
@@ -134,6 +147,7 @@ const FILMES = [
   {
     "titulo": "Os Vingadores",
     "ano": 2012,
+    "ordem": 4,
     "nota": 10,
     "data": "2026-08-17",
     "genero": "Marvel",
@@ -142,6 +156,7 @@ const FILMES = [
   {
     "titulo": "Homem de Ferro 3",
     "ano": 2013,
+    "ordem": 2,
     "nota": 7.5,
     "data": "2026-08-22",
     "genero": "Marvel",
@@ -158,6 +173,7 @@ const FILMES = [
   {
     "titulo": "Capitão América: O Soldado Invernal",
     "ano": 2014,
+    "ordem": 7,
     "nota": 10,
     "data": "2026-08-24",
     "genero": "Marvel",
@@ -174,6 +190,7 @@ const FILMES = [
   {
     "titulo": "Guardiões da Galáxia Vol. 2",
     "ano": 2017,
+    "ordem": 5,
     "nota": 10,
     "data": "2026-08-29",
     "genero": "Marvel",
@@ -182,6 +199,7 @@ const FILMES = [
   {
     "titulo": "Vingadores: Era de Ultron",
     "ano": 2015,
+    "ordem": 2,
     "nota": 9,
     "data": "2026-08-29",
     "genero": "Marvel",
@@ -190,6 +208,7 @@ const FILMES = [
   {
     "titulo": "Homem-Formiga",
     "ano": 2015,
+    "ordem": 2,
     "nota": 6.5,
     "data": "2026-09-03",
     "genero": "Marvel",
@@ -198,6 +217,7 @@ const FILMES = [
   {
     "titulo": "Capitão América: Guerra Civil",
     "ano": 2016,
+    "ordem": 10,
     "nota": 10,
     "data": "2026-09-04",
     "genero": "Marvel",
@@ -206,6 +226,7 @@ const FILMES = [
   {
     "titulo": "Pantera Negra",
     "ano": 2018,
+    "ordem": 8,
     "nota": 10,
     "data": "2026-09-05",
     "genero": "Marvel",
@@ -214,6 +235,7 @@ const FILMES = [
   {
     "titulo": "Homem-Aranha: De Volta ao Lar",
     "ano": 2017,
+    "ordem": 1,
     "nota": 8,
     "data": "2026-09-05",
     "genero": "Marvel",
@@ -230,6 +252,7 @@ const FILMES = [
   {
     "titulo": "Vingadores: Guerra Infinita",
     "ano": 2018,
+    "ordem": 2,
     "nota": 10,
     "data": "2026-09-06",
     "genero": "Marvel",

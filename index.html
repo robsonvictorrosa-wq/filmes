@@ -26,7 +26,7 @@
           <dd><span id="media">—</span><small>/10</small></dd>
         </div>
       </dl>
-      <p class="regra">Empate na nota: fica na frente quem foi assistido antes.</p>
+      <p class="regra">Dentro da mesma nota, a ordem é a que você escolheu.</p>
     </header>
 
     <nav class="abas" role="tablist" aria-label="Seções do diário" id="abas">
@@ -101,6 +101,9 @@
       function porNota(a, b) {
         var d = Number(b.nota) - Number(a.nota);
         if (d) return d;
+        var oa = a.ordem == null ? 999 : Number(a.ordem);
+        var ob = b.ordem == null ? 999 : Number(b.ordem);
+        if (oa !== ob) return oa - ob;
         if (a.data !== b.data) return a.data < b.data ? -1 : 1;
         return String(a.titulo).localeCompare(String(b.titulo), "pt");
       }
