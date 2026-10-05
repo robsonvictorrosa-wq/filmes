@@ -388,5 +388,15 @@ const FILMES = [
     "opiniao": "",
     "sinopse": "Peter Parker, um estudante tímido, é picado por uma aranha geneticamente alterada e ganha força, agilidade e um sentido de perigo. Depois de uma perda na família, ele decide usar os poderes para proteger Nova York, e acaba no caminho do Duende Verde.",
     "poster": "posters/homem-aranha-2002.jpg"
+  },,
+  {
+    "titulo": "Toy Story 5",
+    "ano": 2026,
+    "nota": 8,
+    "data": "2026-10-03",
+    "genero": "Animação",
+    "opiniao": "",
+    "sinopse": "Dois anos depois de Toy Story 4, Jessie, Woody, Buzz e os outros brinquedos lidam com a Lilypad, um tablet que virou o brinquedo preferido da Bonnie.",
+    "poster": "posters/toy-story-5.jpg"
   },
 ];
