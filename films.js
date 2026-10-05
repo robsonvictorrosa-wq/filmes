@@ -328,5 +328,65 @@ const FILMES = [
     "opiniao": "É o início da conclusão da saga do infinito do universo Marvel, e pra mim um dos melhores filmes que existem , o devolvendo do vilão, cada cena, cada momento é tudo pensado até chegar nesse momento, o ápice dos filmes de herói, o melhor filme dos vingadores, Thanos como o grande protagonista de algo que vem sendo criado a 10 anos, o filme é a perfeita junção de todo universo",
     "sinopse": "Thanos percorre o universo em busca das seis Joias do Infinito, com o plano de apagar metade da vida. Os Vingadores, ainda divididos, cruzam o caminho dos Guardiões da Galáxia e de Wakanda para tentar detê-lo. A caçada se espalha da Terra a Titã, e cada joia cobrada muda o tamanho da luta.",
     "poster": "posters/vingadores-guerra-infinita.jpg"
-  }
+  },
+  {
+    "titulo": "Homem-Formiga e a Vespa",
+    "ano": 2018,
+    "nota": 7,
+    "data": "2026-09-08",
+    "genero": "Marvel",
+    "opiniao": "",
+    "sinopse": "Scott Lang sai do regime domiciliar para ajudar Hank Pym e Hope van Dyne a resgatar Janet do reino quântico. No caminho, eles cruzam com a Ava Starr, que atravessa a matéria e quer a mesma tecnologia para sobreviver.",
+    "poster": "posters/homem-formiga-e-a-vespa.jpg"
+  },
+  {
+    "titulo": "Thor: Ragnarok",
+    "ano": 2017,
+    "nota": 9,
+    "data": "2026-09-12",
+    "genero": "Marvel",
+    "opiniao": "",
+    "sinopse": "Thor descobre que Hela, sua irmã, voltou para tomar Asgard e acaba preso no planeta Sakaar. Lá ele reencontra Hulk e precisa reunir uma equipe para impedir o Ragnarok.",
+    "poster": "posters/thor-ragnarok.jpg"
+  },
+  {
+    "titulo": "Capitã Marvel",
+    "ano": 2019,
+    "nota": 7,
+    "data": "2026-09-18",
+    "genero": "Marvel",
+    "opiniao": "",
+    "sinopse": "Carol Danvers cai na Terra dos anos 1990 sem lembrar quem era. Enquanto a guerra entre Kree e Skrulls chega ao planeta, ela descobre a origem dos próprios poderes.",
+    "poster": "posters/capita-marvel.jpg"
+  },
+  {
+    "titulo": "Pokémon 7: Alma Gêmea",
+    "ano": 2004,
+    "nota": 7.5,
+    "data": "2026-09-19",
+    "genero": "Animação",
+    "opiniao": "",
+    "sinopse": "Um Deoxys vindo do espaço chega à cidade e um garoto perde a memória depois de cruzar com ele. Ash tenta ajudar os dois enquanto Rayquaza entra no conflito.",
+    "poster": "posters/pokemon-7-alma-gemea.jpg"
+  },
+  {
+    "titulo": "Pokémon 8: Lucario e o Mistério de Mew",
+    "ano": 2005,
+    "nota": 9,
+    "data": "2026-10-04",
+    "genero": "Animação",
+    "opiniao": "",
+    "sinopse": "Ash e os amigos conhecem Lucario, um Pokémon que serviu a um herói antigo e acredita que Mew ainda está por perto. Juntos, eles entram na Árvore do Começo, onde o passado de Lucario e o mistério de Mew se cruzam.",
+    "poster": "posters/pokemon-8-lucario.jpg"
+  },
+  {
+    "titulo": "Homem-Aranha",
+    "ano": 2002,
+    "nota": 8,
+    "data": "2026-10-04",
+    "genero": "Outros",
+    "opiniao": "",
+    "sinopse": "Peter Parker, um estudante tímido, é picado por uma aranha geneticamente alterada e ganha força, agilidade e um sentido de perigo. Depois de uma perda na família, ele decide usar os poderes para proteger Nova York, e acaba no caminho do Duende Verde.",
+    "poster": "posters/homem-aranha-2002.jpg"
+  },
 ];
