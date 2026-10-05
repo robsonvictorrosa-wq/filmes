@@ -15,7 +15,7 @@
     <header>
       <p class="olho">Diário de cinema</p>
       <h1>Filmes do Robson</h1>
-      <p class="resumo">Notas de 0 a 10 e a opinião, do jeito que foi escrita.</p>
+      <p class="resumo">Pôster, sinopse, a data em que assistiu, a nota de 0 a 10 e a opinião.</p>
       <dl class="stats">
         <div>
           <dt>Filmes</dt>
@@ -141,6 +141,15 @@
           art.appendChild(pos);
         }
 
+        var poster = document.createElement("img");
+        poster.className = "poster";
+        poster.src = f.poster || "";
+        poster.alt = "Pôster de " + f.titulo;
+        poster.width = 92;
+        poster.height = 138;
+        poster.loading = "lazy";
+        art.appendChild(poster);
+
         var corpo = document.createElement("div");
         corpo.className = "corpo";
 
@@ -159,34 +168,35 @@
         chip.setAttribute("data-g", f.genero);
         chip.textContent = f.genero;
         sub.appendChild(chip);
-        if (!opts.diario) {
-          var tempo = document.createElement("time");
-          tempo.dateTime = f.data;
-          tempo.textContent = fmtData(f.data);
-          sub.appendChild(tempo);
-        }
+        var tempo = document.createElement("time");
+        tempo.dateTime = f.data;
+        tempo.textContent = fmtData(f.data);
+        sub.appendChild(tempo);
 
-        var btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = "toggle";
-        btn.textContent = "Opinião";
+        var sinRot = document.createElement("p");
+        sinRot.className = "rotulo";
+        sinRot.textContent = "Sinopse";
+        var sinopse = document.createElement("p");
+        sinopse.className = "sinopse";
+        sinopse.textContent = f.sinopse || "";
+
+        var opRot = document.createElement("p");
+        opRot.className = "rotulo";
+        opRot.textContent = "Opinião";
         var opiniao = document.createElement("p");
-        opiniao.className = "opiniao";
-        opiniao.hidden = true;
-        opiniao.id = opts.uid;
-        opiniao.textContent = f.opiniao || "";
-        btn.setAttribute("aria-expanded", "false");
-        btn.setAttribute("aria-controls", opts.uid);
-        btn.addEventListener("click", function () {
-          var aberto = btn.getAttribute("aria-expanded") === "true";
-          btn.setAttribute("aria-expanded", aberto ? "false" : "true");
-          opiniao.hidden = aberto;
-          btn.textContent = aberto ? "Opinião" : "Fechar opinião";
-        });
+        if (f.opiniao) {
+          opiniao.className = "opiniao";
+          opiniao.textContent = f.opiniao;
+        } else {
+          opiniao.className = "opiniao vazia";
+          opiniao.textContent = "Opinião ainda não escrita.";
+        }
 
         corpo.appendChild(h3);
         corpo.appendChild(sub);
-        corpo.appendChild(btn);
+        corpo.appendChild(sinRot);
+        corpo.appendChild(sinopse);
+        corpo.appendChild(opRot);
         corpo.appendChild(opiniao);
 
         var nota = document.createElement("p");
