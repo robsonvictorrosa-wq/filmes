@@ -95,7 +95,7 @@ const FILMES = [
     "ano": 2010,
     "ordem": 4,
     "nota": 10,
-    "data": "2026-09-28",
+    "data": "2026-07-28",
     "genero": "Animação",
     "opiniao": "Toy Story 3 é definitivamente uma obra de arte em forma de animação, não tenho muitas palavras para descrever o quão bom o \"final\" perfeito, história muito bem fechada terminando de forma incrível, foi uma grande mistura de sentimentos em todos os momentos, desde o começo com o Andy indo pra faculdade e eles jogados no caixa, e todo conflito Interno o Woody sobre ficar com seus amigos ou com o Andy e o final Andy fazendo a melhor escolha possível, foi realmente um roteiro perfeito terminado essa saga com chave de ouro, cada detalhe muito bem, um ótimo fechamento e mostrou que Andy ainda se importa com cada um deles.",
     "sinopse": "Andy está de partida para a faculdade, e os brinquedos temem ser guardados ou doados. Por um engano, vão parar na creche Sunnyside, onde o urso Lotso impõe regras bem diferentes do quarto de criança. Woody tenta reunir os amigos e achar um lugar para eles nessa nova fase.",
