@@ -419,4 +419,14 @@ const FILMES = [
     "sinopse": "Arceus, o Pokémon que teria criado o mundo, desperta furioso por uma traição sofrida há milhares de anos e ameaça a humanidade. Ash, Dawn e Brock viajam ao passado, com a ajuda de Dialga, para descobrir o que realmente aconteceu e mudar o destino da Joia da Vida.",
     "poster": "posters/pokemon-12-arceus.jpg"
   },
+  {
+    "titulo": "Homem-Aranha 3",
+    "ano": 2007,
+    "nota": 10,
+    "data": "2026-10-11",
+    "genero": "Outros",
+    "opiniao": "Um filme fecha perfeitamente a trilogia do Tobey, toda emoção que envolve tudo que está acontecendo, o pedido de casamento, todo arco do Harry, o arco emocional do Peter, a questão da morte do tio Ben, o Venom como foi que ele deixou Peter mais agressivo, mas aquilo tava lá ,ele só potencializou, filme incrível nota 10",
+    "sinopse": "Peter Parker finalmente vive bem como o Homem-Aranha e planeja pedir Mary Jane em casamento. Um simbionte alienígena se prende ao seu uniforme e desperta o lado mais sombrio dele, enquanto Harry busca vingança e surgem o Homem-Areia, ligado à morte do tio Ben, e Venom.",
+    "poster": "posters/homem-aranha-3.jpg"
+  },
 ];
