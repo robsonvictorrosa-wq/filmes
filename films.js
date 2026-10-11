@@ -20,7 +20,7 @@ const FILMES = [
     "nota": 10,
     "data": "2026-09-29",
     "genero": "Marvel",
-    "opiniao": "",
+    "opiniao": "Vingadores Ultimato é uma obra prima, um filme muito bem feito e trás grandes emoções, filme que mede cenas pesadas , com fã service e muito, as cenas incríveis do capitão América, a cena do Tony Stark,  a cena do Tony com seu pai, tem tantas coisas incríveis, filme e perfeito em tudo que faz, sendo uma continuação perfeita de vingadores guerra infinita e não foi algo que não deixou consequências para trás , o que aconteceu terá consequências permanentes por muitos anos em toda Marvel",
     "sinopse": "Depois do estalo de Thanos, os Vingadores que restaram tentam viver com a perda de metade dos seres do universo. Surge um plano arriscado de viajar no tempo para reunir de novo as Joias do Infinito. O filme acompanha essa última missão e o preço que cada um aceita pagar.",
     "poster": "posters/vingadores-ultimato.jpg"
   },
@@ -335,7 +335,7 @@ const FILMES = [
     "nota": 7,
     "data": "2026-09-08",
     "genero": "Marvel",
-    "opiniao": "",
+    "opiniao": "Homem Formiga e a Vespa é um filme bem divertido, mostra claramente as consequências de guerra civil, com o Scott  preso, Hank com raiva dele e ele meio que tento que lidar com diversas situações para não perder sua prisão domiciliar no último dia, o filme desenvolve bem, o reino quântico e o quanto isso pode ser importante para o futuro do UCM, os personagens são bem desenvolvidos, mas falta algo mais sério, e um filme ok, apenas isso.",
     "sinopse": "Scott Lang sai do regime domiciliar para ajudar Hank Pym e Hope van Dyne a resgatar Janet do reino quântico. No caminho, eles cruzam com a Ava Starr, que atravessa a matéria e quer a mesma tecnologia para sobreviver.",
     "poster": "posters/homem-formiga-e-a-vespa.jpg"
   },
@@ -345,7 +345,7 @@ const FILMES = [
     "nota": 9,
     "data": "2026-09-12",
     "genero": "Marvel",
-    "opiniao": "",
+    "opiniao": "Thor Ragnarok muda completamente o tom do filme dos outros filmes do Thor que acho que funciona muito bem, ele traz um tom mais engraçado, porém o filme faz muito bem em manter o tom sério nos momentos principais mantém o tom sério, o filme desenvolve a questão do Hulk e do Banner que estava em aberto desde vingadores dois, eles estão desaparecidos, filme bom e deveria manter a média para os próximos, infelizmente erraram o tom, Hella é uma vilã, interessante.",
     "sinopse": "Thor descobre que Hela, sua irmã, voltou para tomar Asgard e acaba preso no planeta Sakaar. Lá ele reencontra Hulk e precisa reunir uma equipe para impedir o Ragnarok.",
     "poster": "posters/thor-ragnarok.jpg"
   },
@@ -355,7 +355,7 @@ const FILMES = [
     "nota": 7,
     "data": "2026-09-18",
     "genero": "Marvel",
-    "opiniao": "",
+    "opiniao": "Capitã Marvel é um filme de introdução que tinha muito potencial, apresentava a nova personagem que chegava para ser a cara da Marvel nos próximos anos, e tinha tudo para ser uma história muito boa, o filme até se torna mais original que os quadrinhos invertendo o lado vilão da história, porém falta carisma na atris da Carol Deves e pelo menos para mim o grande destaque do filme foi o Nick Fury, o vilão do filme é muito ruim, acho que a história poderia ser melhor desenvolvida, filme.",
     "sinopse": "Carol Danvers cai na Terra dos anos 1990 sem lembrar quem era. Enquanto a guerra entre Kree e Skrulls chega ao planeta, ela descobre a origem dos próprios poderes.",
     "poster": "posters/capita-marvel.jpg"
   },
@@ -365,7 +365,7 @@ const FILMES = [
     "nota": 7.5,
     "data": "2026-09-19",
     "genero": "Animação",
-    "opiniao": "",
+    "opiniao": "Pokemon 7 para mim sinceramente é um piores filmes de Pokémon, realmente não gosto muito, o Tory, os personagens da cidade, todo Plot, não acho tão interessante, em comparação aos outros obviamente, Ash sempre muito bem e tal, Munchulex do filme roubando a cena e o Pluse e Minin também fora interessantes, mas o Deoxis e o Rayquaza não deram tão destaque ao filme, falta carisma nos dois.",
     "sinopse": "Um Deoxys vindo do espaço chega à cidade e um garoto perde a memória depois de cruzar com ele. Ash tenta ajudar os dois enquanto Rayquaza entra no conflito.",
     "poster": "posters/pokemon-7-alma-gemea.jpg"
   },
@@ -375,7 +375,7 @@ const FILMES = [
     "nota": 9,
     "data": "2026-10-04",
     "genero": "Animação",
-    "opiniao": "",
+    "opiniao": "Pokémon 8 é o filme que me fez conhecer o meu pokémon favorito, Lucario, acho incrível toda história que envolve a aura, a ligação do Ash com ela, desde a primeira vez que vi esse filme eu soube Ash deveria ter um, o filme mostra sobre a busca do Pikachu e desenvolve bastante sobre o que a. Aura é capaz de fazer, Mew é só uma parte ok do filme, acho muito foda um pokémon que não é lendário ter um filme dele por isso incrível",
     "sinopse": "Ash e os amigos conhecem Lucario, um Pokémon que serviu a um herói antigo e acredita que Mew ainda está por perto. Juntos, eles entram na Árvore do Começo, onde o passado de Lucario e o mistério de Mew se cruzam.",
     "poster": "posters/pokemon-8-lucario.jpg"
   },
@@ -385,18 +385,38 @@ const FILMES = [
     "nota": 8,
     "data": "2026-10-04",
     "genero": "Outros",
-    "opiniao": "",
+    "opiniao": "Homem Aranha é um filme que introduz o maior herói dos cinemas, Tobey faz um bom papel de todo um universo novo que é apresentado, o pioneiro do filme dos heróis, trás uma história muito boa, e um dos melhores vilões até hoje que é o Doende Verde, acho que algumas coisas no filme me incomodaram um pouco, tipo em alguns momentos algumas atuações, mas o roteiro em si ajuda muito a cobrir esses problemas.",
     "sinopse": "Peter Parker, um estudante tímido, é picado por uma aranha geneticamente alterada e ganha força, agilidade e um sentido de perigo. Depois de uma perda na família, ele decide usar os poderes para proteger Nova York, e acaba no caminho do Duende Verde.",
     "poster": "posters/homem-aranha-2002.jpg"
-  },,
+  },
   {
     "titulo": "Toy Story 5",
     "ano": 2026,
     "nota": 8,
     "data": "2026-10-03",
     "genero": "Animação",
-    "opiniao": "",
+    "opiniao": "Toy Story 5, e infinitamente superior ao desastre que foi o 4, o filme trás um pouco da tecnologia e como os brinquedos ficam de lado com a tecnologia, o filme trás uma temática muito interessante e atual, de como o que realmente está acontecendo na humanidade, achei que trouxe um pouco do que era realmente Toy Story, Claro que não é como a trilogia original mas é um bom filme comparado ao 4",
     "sinopse": "Dois anos depois de Toy Story 4, Jessie, Woody, Buzz e os outros brinquedos lidam com a Lilypad, um tablet que virou o brinquedo preferido da Bonnie.",
     "poster": "posters/toy-story-5.jpg"
+  },
+  {
+    "titulo": "Homem-Aranha 2",
+    "ano": 2004,
+    "nota": 10,
+    "data": "2026-10-10",
+    "genero": "Outros",
+    "opiniao": "Homem Aranha 2 é um filme praticamente perfeito, as cenas de ação, a cena do trem, todo desenvolvimento de cada personagem, cada um deles, Doutor Octopos, A Mary Jane, a tia May e até o Harry, foi um roteiro assim tão encaixado e para tudo sair do jeito que tinha que ser, e pela época que fez o trabalho do direito foi absurdo sem palavras para descrever, muito bom",
+    "sinopse": "Dois anos depois de virar o Homem-Aranha, Peter Parker não consegue equilibrar a faculdade, o trabalho e o amor por Mary Jane, e começa a perder os poderes. Ao mesmo tempo, um experimento fracassado transforma o cientista Otto Octavius no Doutor Octopus, preso a quatro braços mecânicos que agem por conta própria.",
+    "poster": "posters/homem-aranha-2.jpg"
+  },
+  {
+    "titulo": "Pokémon 12: Arceus e a Joia da Vida",
+    "ano": 2009,
+    "nota": 10,
+    "data": "2026-10-10",
+    "genero": "Animação",
+    "opiniao": "Pokémon 12, é um filme feito para mostrar o quanto incrível é Arceus, um filme muito bem trabalhado, com drama, viagem no tempo, traição e reviravoltas, torna o filme muito interessante, e trazer coisa de filmes anteriores torna ainda mais rico como Giratina conhecendo o Ash, baita filme nota 10",
+    "sinopse": "Arceus, o Pokémon que teria criado o mundo, desperta furioso por uma traição sofrida há milhares de anos e ameaça a humanidade. Ash, Dawn e Brock viajam ao passado, com a ajuda de Dialga, para descobrir o que realmente aconteceu e mudar o destino da Joia da Vida.",
+    "poster": "posters/pokemon-12-arceus.jpg"
   },
 ];
