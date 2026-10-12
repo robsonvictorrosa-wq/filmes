@@ -429,4 +429,14 @@ const FILMES = [
     "sinopse": "Peter Parker finalmente vive bem como o Homem-Aranha e planeja pedir Mary Jane em casamento. Um simbionte alienígena se prende ao seu uniforme e desperta o lado mais sombrio dele, enquanto Harry busca vingança e surgem o Homem-Areia, ligado à morte do tio Ben, e Venom.",
     "poster": "posters/homem-aranha-3.jpg"
   },
+  {
+    "titulo": "O Espetacular Homem-Aranha",
+    "ano": 2012,
+    "nota": 8.5,
+    "data": "2026-10-11",
+    "genero": "Outros",
+    "opiniao": "O filme tenta trazer algo diferente do que foi a trilogia do Tobey, a atuação do Andrew e da Emma é incrível, e gosto do quanto o desenvolvimento do Peter foi mais prolongado, como trabalhou o tio Ben, a Gwen e também o próprio Peter, como eles formam um casal perfeito, sem traições ou outras coisas, o filme foi num tom muito bom, e o vilão acho que faltou um pouco de carisma, acho que a tia May é bem inferior, e tal, em si os atores são melhores mas o roteiro atrapalha algumas coisas, poderia ser muito melhor",
+    "sinopse": "Peter Parker, criado pelos tios desde que os pais sumiram, investiga o passado do pai e chega ao laboratório do Dr. Curt Connors, na Oscorp. Lá ele é picado por uma aranha alterada e ganha poderes, enquanto se aproxima de Gwen Stacy. Uma experiência de Connors o transforma no Lagarto, que passa a ameaçar Nova York.",
+    "poster": "posters/o-espetacular-homem-aranha.jpg"
+  },
 ];
