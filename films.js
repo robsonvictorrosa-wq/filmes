@@ -439,4 +439,14 @@ const FILMES = [
     "sinopse": "Peter Parker, criado pelos tios desde que os pais sumiram, investiga o passado do pai e chega ao laboratório do Dr. Curt Connors, na Oscorp. Lá ele é picado por uma aranha alterada e ganha poderes, enquanto se aproxima de Gwen Stacy. Uma experiência de Connors o transforma no Lagarto, que passa a ameaçar Nova York.",
     "poster": "posters/o-espetacular-homem-aranha.jpg"
   },
+  {
+    "titulo": "Homem-Aranha: Longe de Casa",
+    "ano": 2019,
+    "nota": 6,
+    "data": "2026-10-12",
+    "genero": "Marvel",
+    "opiniao": "Acredito que esse filme estraga completamente tudo que foi construído no primeiro, o Peter de novo sendo bobo, inocente, todo desenvolvimento do último filme desperdiçado, ele comete os mesmos erros, a paixão pela MJ não tem explicação, apenas surge do nada,  e acho interessante todo esse arco de tentarem desenvolver ele como jogo Tony Stark, o peso da perca do Tio Ben desse Peter, e o Mistério é um puta vilão, carismático pra caramba, a incerteza de saber oq é verdade ou mentira, é a cena pós créditos é realmente o grande peso do filme, se fosse um filme isolado teria um nota maior, mas por ser uma continuação é um problema",
+    "sinopse": "Depois dos acontecimentos de Vingadores: Ultimato, Peter Parker viaja com a turma da escola pela Europa e só quer se declarar para MJ. Nick Fury o convoca para enfrentar criaturas elementais ao lado de Quentin Beck, o Mysterio, um herói vindo de outra dimensão que talvez não seja o que parece.",
+    "poster": "posters/homem-aranha-longe-de-casa.jpg"
+  },
 ];
