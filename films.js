@@ -449,4 +449,34 @@ const FILMES = [
     "sinopse": "Depois dos acontecimentos de Vingadores: Ultimato, Peter Parker viaja com a turma da escola pela Europa e só quer se declarar para MJ. Nick Fury o convoca para enfrentar criaturas elementais ao lado de Quentin Beck, o Mysterio, um herói vindo de outra dimensão que talvez não seja o que parece.",
     "poster": "posters/homem-aranha-longe-de-casa.jpg"
   },
+  {
+    "titulo": "X-Men: O Filme",
+    "ano": 2000,
+    "nota": 6,
+    "data": "2026-10-18",
+    "genero": "Outros",
+    "opiniao": "Filme bom apresentar e desenvolver os mutantes, todo universo, o preconceito com os mutantes e tudo que envolve o Universo, o Magneto é realmente um baita vilão, e Wolverine é muito também como ator, mas filme falta algumas coisas, ritmo, não me agradou muito.",
+    "sinopse": "Num mundo que teme os mutantes, a jovem Vampira foge de casa e cruza o caminho de Wolverine, um mutante sem memória do passado. Os dois são levados à escola do Professor Xavier, onde os X-Men tentam impedir que Magneto use uma máquina para transformar à força os líderes mundiais em mutantes.",
+    "poster": "posters/x-men.jpg"
+  },
+  {
+    "titulo": "X-Men 2",
+    "ano": 2003,
+    "nota": 5,
+    "data": "2026-10-24",
+    "genero": "Outros",
+    "opiniao": "O filme tem um ritmo muito lento, acho que é arrastado, ritmo muito ruim, tudo meio que se revolve com o Sacrifício da Jean, mas em si, não gosto muito da construção, das lutas, acho que poderia ser bem melhor.",
+    "sinopse": "Depois de um ataque à Casa Branca atribuído a um mutante, o coronel William Stryker invade a escola de Xavier e sequestra o professor. Os X-Men precisam se aliar a Magneto para impedir o plano de Stryker, enquanto Wolverine descobre pistas sobre o próprio passado.",
+    "poster": "posters/x-men-2.jpg"
+  },
+  {
+    "titulo": "X-Men: O Confronto Final",
+    "ano": 2006,
+    "nota": 5,
+    "data": "2026-10-25",
+    "genero": "Outros",
+    "opiniao": "O filme focado no Jena sem controle, sem muitas explicações, Scott simplesmente morrer ali do nada, dps mata o Professor, aí ela decide ficar do lado do Magneto, nada fez muito sentido, salvo pelas atuações do Magneto e Wolverine.",
+    "sinopse": "Uma empresa anuncia uma cura capaz de tirar os poderes dos mutantes, e Magneto reúne um exército para destruí-la. Ao mesmo tempo, Jean Grey volta à vida como a Fênix, com um poder que ela não consegue controlar, e os X-Men ficam divididos entre os dois conflitos.",
+    "poster": "posters/x-men-o-confronto-final.jpg"
+  },
 ];
